@@ -1,7 +1,7 @@
 
 /***    EQUATIONS    ***/
 
-// Key codes from keypress.keyCode
+// Keys to be accepted
 var permissableCharacters = [
     "Backspace", "Delete", "Tab",                      // Backspace
     '0', '1', '2', '3', '4', '5', '6', '7', '8', '9',  // 0 thru 9
