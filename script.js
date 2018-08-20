@@ -41,7 +41,8 @@ var equEvents = {
     equBlur: function(ev)
     {
         // If the element is a [data-var], change the relevant variable
-        var el = ev.originalTarget
+        console.log(ev)
+        var el = ev.target
         var dataVar = el.attributes.getNamedItem("data-var").value
         equVars[dataVar] = el.innerHTML
 
