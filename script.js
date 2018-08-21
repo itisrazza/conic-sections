@@ -107,7 +107,7 @@ var modes = {
     // Ellipse
     ellipse: {
         title: "Ellipse",
-        equation: "1 = (x - $h)<sup>2</sup> / $a + (y - $k)<sup>2</sup> / $b",
+        equation: "1 = (x - $h)<sup>2</sup> / $a<sup>2</sup> + (y - $k)<sup>2</sup> / $b<sup>2</sup>",
         y: function(x)
         {
             var h = eval(equVars["h"])
@@ -120,7 +120,7 @@ var modes = {
             // (y - k)^2 = b(1 - ((x - h)^2))/a
             // y - k = sqrt(b(1 - ((x - h)^2)/a)))
             // y = sqrt(b(1 - ((x - h)^2)/a)) + k
-            return Math.sqrt(b * (1 - (Math.pow(x - h, 2) / a))) + k
+            return Math.sqrt(Math.pow(b, 2) * (1 - (Math.pow(x - h, 2) / Math.pow(a, 2)))) + k
         },
         dualSided: true,
         parameters: [ "h", "k", "a", "b" ],
@@ -170,7 +170,7 @@ var modes = {
 
     hyperbola: {
         title: "Hyperbola",
-        equation: "1 = (x - $h)<sup>2</sup> / $a - (y - $k)<sup>2</sup> / $b",
+        equation: "1 = (x - $h)<sup>2</sup> / $a<sup>2</sup> - (y - $k)<sup>2</sup> / $b<sup>2</sup>",
         y: function(x)
         {
             var h = eval(equVars["h"])
@@ -183,7 +183,7 @@ var modes = {
             // (y - k)^2 = b(1 - ((x - h)^2))/a
             // y - k = sqrt(b(1 - ((x - h)^2)/a)))
             // y = sqrt(b(1 - ((x - h)^2)/a)) + k
-            return Math.sqrt(b * ((Math.pow(x - h, 2) / a)) - 1) + k
+            return Math.sqrt(Math.pow(b, 2) * ((Math.pow(x - h, 2) / Math.pow(a, 2))) - 1) + k
         },
         dualSided: true,
         parameters: [ "a", "b", "h", "k" ],
