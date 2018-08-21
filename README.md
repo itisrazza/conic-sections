@@ -1,8 +1,19 @@
-# Conic Sections Plotter
+<h1 align="center">Conic Sections Plotter</h1>
+<p align="center"><img src="https://feen.us/5jqafv.png" alt=""></p>
+
 ## What is this?
 Short story: I was bored in Maths, I started writing this plotter thingie to better understand these things.
 
 It's not perfect. It's just a learning tool for me and anyone else who wants to look at this mess of code. It was done in only a few maths classes.
+
+## How to use
+Edit formulas by editing the characters marked in a reddish-yellowish background colour. If you don't have anything, the variable name will be shown instead.
+
+You can also choose between formulas by selecting the tabs above.
+
+## Known Issues/Feature Wishlist
+* Graph doesn't change on input
+* Additional information on the graph
 
 ## Design
 I've decided to keep the equations seperate from the code (as in kept the in their own objects rather than intertwine them).
